@@ -1,0 +1,145 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  
+  #wrapper {
+    position:relative;
+    max-width:100%;
+    overflow: hidden;
+    max-width:1600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:16px;
+    padding-right:16px;
+  }
+  
+  .swiper {
+    margin-top:3%;
+    /*max-width:100%;*/
+  }
+  
+  
+  .swiper-pagination {
+    position:relative;
+    margin-bottom:1%;
+    z-index:1;
+  }
+  
+  
+  
+  
+  .swiper-button-prev, .swiper-button-next {
+    position:relative;
+    margin-top:0px;
+    left:0px;
+    right:0px;
+    z-index:1;
+    color:black;
+  }
+  
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size:20px;
+    font-weight:bold;
+  }
+  
+
+
+  .swiper-button-prev:hover, .swiper-button-next:hover {
+  
+    background-color:lightgrey;
+  }
+  
+  
+  .swiper-button-prev {
+    margin-right:15px;
+  
+  }
+  
+  .swiper-button-next {
+    margin-left:15px;
+  
+  }
+  
+  
+  .swiper-pagination-bullet  {
+    border-radius:0px;
+    margin:0px;
+    padding:0px;
+  }
+
+  :root {
+    --swiper-theme-color: black;
+}
+  
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position:relative;
+    /*left:0%;*/
+    /*right:0%;*/
+    display:none;
+  }
+  
+  .swiper-slide {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .slide_img {
+    max-width:100%;
+  }
+
+
+  .slide-text {
+    max-width:200px;
+    text-align:center;
+    margin-top:5%;
+  }
+
+  .grey-text {
+    color:grey;
+  }
+
+  .red-text {
+    color:red;
+    margin-top:2%;
+  }
+
+  .under-text {
+    color:black;
+    padding:10px;
+    font-size:120%;
+  }
+
+  .prev-next {
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .text-prev-next {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5%;
+    margin-bottom:1%
+  }
+
+  /*
+  .swiper5 {
+    flex:30%;
+  }
+
+  
+
+  .block1 {
+    flex:50%;
+  }
+
+  #container {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+  }*/
+

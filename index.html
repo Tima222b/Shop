@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Библиотека иконок CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <!--Мои стили CSS-->
+    <link rel="stylesheet" href="./sliders.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    
+    <title>Интернет магазин</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <div id="address-phone">
+                         <a class="header-top-link" href="#"><i class="fa fa-phone "></i> +998 99 999 99 99</a>     
+                         <a class="header-top-link" href="#"><i class="fa-solid fa-location-dot"></i> Toshkent shahar , Alisher Navoiy ko’chasi , 12A uy</a>
+                </div>
+                <div id="about-us">
+                    <a class="header-top-link" href="#">Biz haqimizda</a>
+                    <a class="header-top-link" href="#">Mahsulotlarimiz</a>
+                    <a class="header-top-link" href="#">Bog’lanish</a>
+                </div>
+            </nav>
+    
+    
+            <div id="header-menu">
+                <a href="#" class="link-logo"><img class="logo" src="./img/logo_CasesCity 2.png" alt=""></a>
+                <div id="burger-menu" onclick="menu()">
+                    <i class="fa fa-bars"></i>
+                    <span id="katalog">Katalog</span>
+                </div>
+    
+                <div class="search-container">
+                    <i class="fa fa-search "></i> 
+                    <input type="search" class="search-input" placeholder="Qidiruv...">
+                </div>
+    
+                <div id="nav-panel">
+                    <div id="translate">
+                        <img class="header-img" src="./img/Frame 100.png" alt="">
+                        <span class="text">Uzbekcha</span>
+                    </div>
+        
+                    <a class="header-bottom-link" href="#">
+                        <img class="header-img" src="./img/Frame 101.png" alt="">
+                        <span class="text">Savatcha</span>
+                    </a>
+                    
+                    <a class="header-bottom-link" href="#">
+                        <img class="header-img" src="./img/Frame 102.png" alt="">
+                        <span class="text">Istaklar</span>
+                    </a>
+    
+                    <a class="header-bottom-link" href="#">
+                        <img class="header-img" src="./img/Frame 103.png" alt="">
+                        <span class="text">Kirish</span>
+                    </a>
+                </div>
+    
+            </div>
+    
+        </div>
+    </header>
+    
+
+    <div id="menu">
+      <div class="wrapper">
+        <div id="close">
+          <i class="fa fa-close" onclick="menu()"></i>
+        </div>
+        <div id="container-menu">
+          <div class="menu-column">
+            <h3 class="header3-menu">Запчасти для телефонов</h3>
+            <a class="menu-link" href="#">Дисплеи</a>
+            <a class="menu-link" href="#">Тачскрины</a>
+            <a class="menu-link" href="#">Задние крышки</a>
+            <a class="menu-link" href="#">Шлейфы</a>
+            <a class="menu-link" href="#">Корпусы</a>
+            <a class="menu-link" href="#">Подсветки</a>
+          </div>
+  
+          <div class="menu-column">
+            <h3 class="header3-menu">Смартфоны и гаджеты</h3>
+            <a class="menu-link" href="#">Смартфоны</a>
+            <a class="menu-link" href="#">Кнопочные телефоны</a>
+            <a class="menu-link" href="#">Планшеты</a>
+            <a class="menu-link" href="#">Часы</a>
+            <a class="menu-link" href="#">Наушники</a>
+            <a class="menu-link" href="#">Гаджеты и аксессуары</a>
+          </div>
+  
+          <div class="menu-column">
+            <h3 class="header3-menu">Ноутбуки и компьютеры</h3>
+            <a class="menu-link" href="#">Ноутбуки</a>
+            <a class="menu-link" href="#">Компьютеры</a>
+            <a class="menu-link" href="#">Моноблоки</a>
+            <a class="menu-link" href="#">Комплектующие</a>
+          </div>
+  
+          <div class="menu-column">
+            <h3 class="header3-menu">Бытовая техника</h3>
+            <a class="menu-link" href="#">Телевизоры</a>
+            <a class="menu-link" href="#">Стиральные машины</a>
+            <a class="menu-link" href="#">Кондиционеры</a>
+            <a class="menu-link" href="#">Пылесосы</a>
+            <a class="menu-link" href="#">Утюги</a>
+            <a class="menu-link" href="#">Увлажнители</a>
+            <a class="menu-link" href="#">Швейные машины</a>
+            <a class="menu-link" href="#">Кулеры</a>
+            <a class="menu-link" href="#">Вентиляторы</a>
+          </div>
+  
+          <div class="menu-column">
+            <h3 class="header3-menu">Кухонная техника</h3>
+            <a class="menu-link" href="#">Холодильнгики</a>
+            <a class="menu-link" href="#">Газовые плиты</a>
+            <a class="menu-link" href="#">Посудомоечные машины</a>
+            <a class="menu-link" href="#">Микроволновые печи</a>
+            <a class="menu-link" href="#">Электрочайники</a>
+            <a class="menu-link" href="#">Мультиварки</a>
+            <a class="menu-link" href="#">Мясорубки</a>
+            <a class="menu-link" href="#">Соковыжималки</a>
+            <a class="menu-link" href="#">Блендеры</a>
+            <a class="menu-link" href="#">Миксеры</a>
+            <a class="menu-link" href="#">Тостеры</a>
+            <a class="menu-link" href="#">Кофемашины</a>
+            <a class="menu-link" href="#">Кухонные весы</a>
+            <a class="menu-link" href="#">Кухонные комбайны</a>
+          </div>
+  
+          <div class="menu-column">
+            <h3 class="header3-menu">Красота и здоровье</h3>
+            <a class="menu-link" href="#">Фены</a>
+            <a class="menu-link" href="#">Электробритвы</a>
+            <a class="menu-link" href="#">Триммеры</a>
+            <a class="menu-link" href="#">Утюжок для волос</a>
+            <a class="menu-link" href="#">Эпиляторы</a>
+            <a class="menu-link" href="#">Электронные весы</a>
+          </div>
+  
+          <div id="search-container2">
+            <i class="fa fa-search"></i>
+            <input type="search" name="search2" id="search2" placeholder="Поиск">
+          </div>
+  
+          <a class="product-all" href="#"><span class="menu-span">Запчасти для телефонов</span><span class="menu-span2"></span></a>
+          <a class="product-all" href="#"><span class="menu-span">Смартфоны и гаджеты</span><span class="menu-span2"></span></a>
+          <a class="product-all" href="#"><span class="menu-span">Ноутбуки и компьютеры</span><span class="menu-span2"></span></a>
+          <a class="product-all" href="#"><span class="menu-span">Бытовая техника</span><span class="menu-span2"></span></a>
+          <a class="product-all" href="#"><span class="menu-span">Кухонная техника</span><span class="menu-span2"></span></a>
+          <a class="product-all" href="#"><span class="menu-span">Красота и здоровье</span><span class="menu-span2"></span></a>
+
+          <a class="icons" href="#"><i class="fa-solid fa-cart-shopping"></i> Savatcha</a>
+          <a class="icons" href="#"><i class="fa fa-heart "></i> Istaklar</a>
+          <a class="icons" href="#"><i class="fas fa-user-alt"></i> Kirish</a>
+
+
+          <div id="address-phone-menu">
+            <a class="header-top-link header-top-link2" href="#"><i class="fa fa-phone "></i> +998 99 999 99 99</a>     
+            <a class="header-top-link header-top-link2" href="#"><i class="fa-solid fa-location-dot"></i> Toshkent shahar , Alisher Navoiy ko’chasi , 12A uy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <main>
+        <section id="section1">
+            <div class="wrapper content">
+                <div id="phones-container">
+                    <div id="left-side">
+                      
+                        <div id="left-side1">
+                                <div id="header-and-link-in-left-side">
+                                    <h1 id="oilangiz">Oilangiz va O’zingizga eng yaxshilarini sizga taqdim qilamiz</h1>
+                                    <a href="#" id="view-products">Mahsulotlarni ko’rish</a>
+                                </div>
+                            
+                                <img id="phone" src="./img/ed5c41cba6cabbd11876e0ca0b5e1536-removebg-preview 1.png" alt="">
+                            
+                        </div>
+                    </div>
+    
+    
+                    <div id="right-side">
+    
+                        <div id="top-side">
+                            <div class="card">
+                                
+                                    <h2 class="headers">Extiyot qismlar</h2>
+                                    <a class="more" href="#">Ko’proq</a>
+                                
+                                
+                                    <img class="phones" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 1.png" alt="">
+                                
+                            </div>
+    
+                            <div class="card">
+                                
+                                    <h2 class="headers">Aksessuarlar</h2>
+                                    <a class="more" href="#">Ko’proq</a>
+                                
+                                
+                                    <img class="phones" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 11.png" alt="">
+                                
+                                    <img id="izobrajenie1" src="./img/small_img1.png" alt="">
+                                    <img id="izobrajenie2" src="./img/small_img2.png" alt="">
+                            </div>
+                        </div>
+    
+                        <div id="bottom-side">
+                            <div class="card">
+                                
+                                    <h2 class="headers">Uskunalar</h2>
+                                    <a class="more" href="#">Ko’proq</a>
+                                
+                                
+                                    <img class="phones" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 12.png" alt="">
+                                
+                            </div>
+    
+                            <div class="card">
+                                
+                                    <h2 class="headers">Akademiya</h2>
+                                    <a class="more" href="#">Ko’proq</a>
+                                
+                                
+                                    <img class="phones" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 13.png" alt="">
+                                
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+    
+            <div class="wrapper content">
+                <div id="parent-container">
+                    <div class="child-container">
+                        <div class="positsiya"> 
+                                <img class="photo" src="./img/Vector1.png" alt="">
+                                <div>
+                                    <h3>Tezkor xizmat ko’rsatish</h3>
+                                    <p class="grey-text">Bir zumda </p>
+                                </div>                          
+                        </div>
+        
+                        <div class="positsiya">
+                                <img class="photo" src="./img/Frame 110.png" alt="">
+                                <div>
+                                    <h3>Eng yaxshi onlayn yordam</h3>
+                                    <p class="grey-text">24/7 soat</p>
+                                </div>                           
+                        </div>
+                    </div>
+
+
+                    <div class="child-container">
+                        <div class="positsiya">
+                                <img class="photo" src="./img/Frame 106.png" alt="">
+                                <div>
+                                    <h3>Bepul yetkazib berish</h3>
+                                    <p class="grey-text">100$ dan ortiq buyurtmalar</p>
+                                </div>                            
+                        </div>
+        
+                        <div class="positsiya">
+                                <img class="photo" src="./img/Frame 111.png" alt="">
+                                <div>
+                                    <h3>Tezkor xizmat ko’rsatish</h3>
+                                    <p class="grey-text">Bir zumda </p>
+                                </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    
+        </section>
+    
+    
+    
+    
+    <section id="section2">
+        <div class="wrapper content">
+
+    
+            <div class="text-prev-next">
+              <h1 class="kategory">Kategoriyalar</h1>
+              <div class="prev-next">
+                <div class="swiper-button-prev swiper-button-prev1"></div>
+                <div class="swiper-button-next swiper-button-next1"></div>
+              </div>
+            </div>
+      
+            <div class="swiper-scrollbar swiper-scrollbar1"></div>
+      
+        <div class="swiper-pagination swiper-pagination1"></div>
+      
+        <div class="swiper swiper1">
+            
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 120.png" alt="">
+                <p class="slide-text">
+                  Tarmoq uskunalari
+                </p>
+              </div>
+      
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 121.png" alt="">
+                <p class="slide-text">
+                  Kabel , Adapterlar
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 122.png" alt="">
+                <p class="slide-text">
+                  Kreditlar , aktivlashtish
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 123.png" alt="">
+                <p class="slide-text">
+                  Telefon qismlari
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 124.png" alt="">
+                <p class="slide-text">
+                  Mobil qurilma va aksessuarlar
+                </p>
+              </div>
+      
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 125.png" alt="">
+                <p class="slide-text">
+                  Quvvat manbalari va batareyalar
+                </p>
+              </div>
+              
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 122.png" alt="">
+                <p class="slide-text">
+                  Kreditlar , aktivlashtish
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 123.png" alt="">
+                <p class="slide-text">
+                  Telefon qismlari
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 124.png" alt="">
+                <p class="slide-text">
+                  Mobil qurilma va aksessuarlar
+                </p>
+              </div>
+      
+              <div class="swiper-slide">
+                <img class="slide_img" src="./img/Frame 125.png" alt="">
+                <p class="slide-text">
+                  Quvvat manbalari va batareyalar
+                </p>
+              </div>
+              
+            </div>
+          
+          
+      
+        </div>
+      
+      </div>
+    
+    </section>
+    
+        
+    <section id="section3">
+      <div class="wrapper content">
+        <div id="parent">
+          <div id="left-grey">
+            
+              <div class="margiin1">
+                <h2 id="mobile-devices">Eng so’ngi modeldagi mobil qurilmalar</h2>
+                <a href="#" class="view-products">Mahsulotlarni ko’rish</a>
+              </div>
+                    
+              <img id="telefon1" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 2.png" alt="">
+            
+          </div>
+
+          <div id="right-grey">
+          
+              <div class="margiin1">
+                <h2 id="special-accessories">Qurilmalaringiz uchun maxsus aksessuarlar</h2>
+                <a href="#" class="view-products">Mahsulotlarni ko’rish</a>
+              </div>
+                       
+              <img id="mobile" src="./img/ed5c41cba6cabbd11876e0ca0b5e1536-removebg-preview 1.png" alt="">
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section id="section3">
+      <div class="wrapper content">
+
+  
+          <div class="text-prev-next">
+            <h1 class="kategory">Eng ko’p sotilgan mahsulotlar</h1>
+            <div class="prev-next">
+              <div class="swiper-button-prev swiper-button-prev2"></div>
+              <div class="swiper-button-next swiper-button-next2"></div>
+            </div>
+          </div>
+    
+          <div class="swiper-scrollbar swiper-scrollbar2"></div>
+    
+      <div class="swiper-pagination swiper-pagination2"></div>
+    
+      <div class="swiper swiper2">
+          
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <img class="slide_img" src="./img/Frame 134.png" alt="">
+              <p class="slide-text grey-text">
+                Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+              </p>
+              <h3 class="red-text">250 000 so’m</h3>
+            </div>
+    
+            <div class="swiper-slide grey-text">
+              <img class="slide_img" src="./img/Frame 135.png" alt="">
+              <p class="slide-text">
+                Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+              </p>
+              <h3 class="red-text">400 000 so’m</h3>
+            </div>
+            <div class="swiper-slide grey-text">
+              <img class="slide_img" src="./img/Frame 136.png" alt="">
+              <p class="slide-text">
+                Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+              </p>
+              <h3 class="red-text">350 000 so’m</h3>
+            </div>
+            <div class="swiper-slide grey-text">
+              <img class="slide_img" src="./img/Frame 137.png" alt="">
+              <p class="slide-text">
+                Iphone 13 pro max , 64/4 , qora, oq, kulrang
+              </p>
+              <h3 class="red-text">15 000 000 so’m</h3>
+            </div>
+            
+            <div class="swiper-slide grey-text">
+              <img class="slide_img" src="./img/Frame 135.png" alt="">
+              <p class="slide-text">
+                Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+              </p>
+              <h3 class="red-text">400 000 so’m</h3>
+            </div>
+            <div class="swiper-slide grey-text">
+              <img class="slide_img" src="./img/Frame 136.png" alt="">
+              <p class="slide-text">
+                Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+              </p>
+              <h3 class="red-text">350 000 so’m</h3>
+            </div>
+            <div class="swiper-slide grey-text">
+              <img class="slide_img" src="./img/Frame 137.png" alt="">
+              <p class="slide-text">
+                Iphone 13 pro max , 64/4 , qora, oq, kulrang
+              </p>
+              <h3 class="red-text">15 000 000 so’m</h3>
+            </div>
+          </div>
+        
+        
+    
+      </div>
+    
+    </div>
+  
+  </section>
+
+
+
+
+
+  <section id="section4">
+    <div class="wrapper content">
+
+
+        <div class="text-prev-next">
+          <h1 class="kategory">Aksessuarlar</h1>
+          <div class="prev-next">
+            <div class="swiper-button-prev swiper-button-prev3"></div>
+            <div class="swiper-button-next swiper-button-next3"></div>
+          </div>
+        </div>
+  
+        <div class="swiper-scrollbar swiper-scrollbar3"></div>
+  
+    <div class="swiper-pagination swiper-pagination3"></div>
+  
+    <div class="swiper swiper3">
+        
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img class="slide_img" src="./img/Frame 1341.png" alt="">
+            <p class="slide-text grey-text">
+              Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+            </p>
+            <h3 class="red-text">250 000 so’m</h3>
+          </div>
+  
+          <div class="swiper-slide grey-text">
+            <img class="slide_img" src="./img/Frame 1342.png" alt="">
+            <p class="slide-text">
+              Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+            </p>
+            <h3 class="red-text">400 000 so’m</h3>
+          </div>
+          <div class="swiper-slide grey-text">
+            <img class="slide_img" src="./img/Frame 1343.png" alt="">
+            <p class="slide-text">
+              Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+            </p>
+            <h3 class="red-text">350 000 so’m</h3>
+          </div>
+          <div class="swiper-slide grey-text">
+            <img class="slide_img" src="./img/Frame 1344.png" alt="">
+            <p class="slide-text">
+              Iphone 13 pro max , 64/4 , qora, oq, kulrang
+            </p>
+            <h3 class="red-text">15 000 000 so’m</h3>
+          </div>
+          <div class="swiper-slide grey-text">
+            <img class="slide_img" src="./img/Frame 1342.png" alt="">
+            <p class="slide-text">
+              Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+            </p>
+            <h3 class="red-text">400 000 so’m</h3>
+          </div>
+          <div class="swiper-slide grey-text">
+            <img class="slide_img" src="./img/Frame 1343.png" alt="">
+            <p class="slide-text">
+              Aqlli bilaguzuk Xiaomi Mi Band 7 (Orginal)
+            </p>
+            <h3 class="red-text">350 000 so’m</h3>
+          </div>
+          <div class="swiper-slide grey-text">
+            <img class="slide_img" src="./img/Frame 1344.png" alt="">
+            <p class="slide-text">
+              Iphone 13 pro max , 64/4 , qora, oq, kulrang
+            </p>
+            <h3 class="red-text">15 000 000 so’m</h3>
+          </div>
+
+        </div>
+      
+      
+  
+    </div>
+  
+  </div>
+
+</section>
+
+
+<section id="section5">
+  <div class="wrapper content">
+    <div id="products">
+      <div class="tehnika">
+        <h2 id="sumsung">Samsung telefonlari</h2>
+
+        <div class="tovar">
+          <a href="#" class="barchasi">Barchasi</a>
+          <img class="product" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 21.png" alt="">
+        </div>
+      </div>
+
+      <div class="tehnika">
+        <h2 id="headphone">Quloqchinlar</h2>
+
+        <div class="tovar">
+          <a href="#" class="barchasi">Barchasi</a>
+          <img class="product" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 22.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="tehnika">
+        <h2 id="network-devices">Tarmoq uskunalari</h2>
+
+        <div class="tovar">
+          <a href="#" class="barchasi">Barchasi</a>
+          <img class="product" src="./img/59a35f4dd73c68162d02052b4346bd6c-removebg-preview 23.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="section6">
+  <div class="wrapper content">
+
+
+      <div class="text-prev-next">
+        <h1 class="kategory">Bizning yangiliklarimiz</h1>
+        <div class="prev-next">
+          <div class="swiper-button-prev swiper-button-prev4"></div>
+          <div class="swiper-button-next swiper-button-next4"></div>
+        </div>
+      </div>
+
+      <div class="swiper-scrollbar swiper-scrollbar4"></div>
+
+  <div class="swiper-pagination swiper-pagination4"></div>
+
+  <div class="swiper swiper4">
+      
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <img class="slide_img" src="./img/422728312_1433954883999025_8219918735811624717_n 1.png" alt="">
+          <p class="under-text">
+            Tabi nozik shafyorlar uchun kerakli qurilmalar
+          </p>
+        </div>
+
+        <div class="swiper-slide grey-text">
+          <img class="slide_img" src="./img/422728312_1433954883999025_8219918735811624717_n 11.png" alt="">
+          <p class="under-text">
+            Eng so’ngi modeldagi iphone qurilmalari chegirma asosida
+          </p>
+        </div>
+        <div class="swiper-slide grey-text">
+          <img class="slide_img" src="./img/422728312_1433954883999025_8219918735811624717_n 12.png" alt="">
+          <p class="under-text">
+            So’ngi texnologiyalar sotuvda
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img class="slide_img" src="./img/422728312_1433954883999025_8219918735811624717_n 1.png" alt="">
+          <p class="under-text">
+            Tabi nozik shafyorlar uchun kerakli qurilmalar
+          </p>
+        </div>
+
+        <div class="swiper-slide">
+          <img class="slide_img" src="./img/422728312_1433954883999025_8219918735811624717_n 11.png" alt="">
+          <p class="under-text">
+            Eng so’ngi modeldagi iphone qurilmalari chegirma asosida
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img class="slide_img" src="./img/422728312_1433954883999025_8219918735811624717_n 12.png" alt="">
+          <p class="under-text">
+            So’ngi texnologiyalar sotuvda
+          </p>
+        </div>
+
+      </div>
+    
+    
+
+  </div>
+
+</div>
+
+</section>
+
+
+<section id="section7">
+  <div class="wrapper content">
+    <div class="container-img">
+      <img class="firm" src="./img/Variant2.png" alt="">
+      <img class="firm" src="./img/Variant21.png" alt="">
+      <img class="firm" src="./img/Variant22.png" alt="">
+      <img class="firm" src="./img/Variant23.png" alt="">
+      <img class="firm" src="./img/Variant24.png" alt="">
+    </div>
+
+
+    <div class="container-img">
+      <img class="firm" src="./img/Variant25.png" alt="">
+      <img class="firm" src="./img/Variant26.png" alt="">
+      <img class="firm" src="./img/Variant27.png" alt="">
+      <img class="firm" src="./img/Variant28.png" alt="">
+      <img class="firm" src="./img/Variant29.png" alt="">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrapper content">
+    <div id="footer-section1">
+      <div class="footer-column">
+        <a href="#" class="link-logo link-logo2"><img class="logo logo-footer" src="./img/logo_CasesCity 2.png" alt=""></a>
+        <div id="container-sot-setey">
+          <a class="link-sot-seti" href="#"><img class="sot-seti" src="./img/Vectorq.png" alt=""></a>
+          <a class="link-sot-seti" href="#"><img class="sot-seti" src="./img/Vectorw.png" alt=""></a>
+          <a class="link-sot-seti" href="#"><img class="sot-seti" src="./img/Vectore.png" alt=""></a>
+          <a class="link-sot-seti" href="#"><img class="sot-seti" src="./img/Vectorr.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h2>Xaridorlar uchun</h2>
+        <a class="footer-link" href="#">Savol va Javob</a>
+        <a class="footer-link" href="#">Qanday qilib sotib<br>olish mumkin</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Casecity.uz</h2>
+        <a class="footer-link" href="#">Biz haqimizda</a>
+        <a class="footer-link" href="#">Hamkorlarimiz</a>
+        <a class="footer-link" href="#">Bog’lanish</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Ma’lumotlar</h2>
+        <a class="footer-link" href="#">Mahsulotlarimiz</a>
+        <a class="footer-link" href="#">Hamkor bo’lish</a>
+        <a class="footer-link" href="#">Jamoamiz</a>
+        <a class="footer-link" href="#">Aksiyalar</a>
+        <a class="footer-link" href="#">Yangiliklar</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Bog’lanish</h2>
+        <a class="footer-link" href="#">+998 90 999 99 99</a>
+        <a class="footer-link" href="#">info@casecity.uz</a>
+      </div>
+
+    </div>
+
+    <div id="footer-section2">
+      <span id="span-footer">2024 © “casecity.uz - onlayn do'kon”</span>
+      <p id="par-footer"><span>Tayyorlovchi - </span><img id="img-footer-section2" src="./img/Frame.png" alt=""></p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+    <!--Swiper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
